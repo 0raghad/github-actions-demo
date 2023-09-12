@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest  # Change it to your OS
+    runs-on: ubuntu-latest  # Change it to your OS
 
     steps:
       - name: Checkout code
@@ -18,3 +18,6 @@ jobs:
         with:
           python-version: 3.x
 
+
+      - name: Run Python script
+        run: python test.py # Change it to your Python file name
